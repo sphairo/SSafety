@@ -1,11 +1,3 @@
-//
-//  AccessQRModel.swift
-//  TestApp
-//
-//  Created by softtek on 30/05/20.
-//  Copyright © 2020 softtek. All rights reserved.
-//
-
 /*
  {
      "data": {
