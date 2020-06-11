@@ -40,24 +40,23 @@ class FirstViewController: UIViewController {
         
         arrayEndpoints.append(Endpoint.init(name: "Symptoms", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/symptom", method: .POST, body: ["idEmployee": 1, "symptoms": [["idSymptom": 1, "descSymptom": "Mareo"], ["idSymptom": 2, "descSymptom": "Dolor"]] ], parseTo: .symptomsModel))
         
-        arrayEndpoints.append(Endpoint.init(name: "COVID Patient Contact", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/covidContact", method: .POST, body: ["idEmployee": 1, "contactWithCovidPerson": true], parseTo: .covidContactModel))
+        arrayEndpoints.append(Endpoint.init(name: "COVID Patient Contact", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/covidcontact", method: .POST, body: ["idEmployee": 1, "contactWithCovidPerson": true], parseTo: .covidContactModel))
         
-        arrayEndpoints.append(Endpoint.init(name: "Travel", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/travel", method: .POST, body: ["lastTravelDate": "2012-04-23",
-                                                                                                                                                                     "travelCity": "Brasil",
-                                                                                                                                                                     "arriveDate": NSNull(),
-                                                                                                                                                                     "leaveDate": NSNull(),
-                                                                                                                                                                     "idEmployee": 11], parseTo: .covidContactModel))
+        arrayEndpoints.append(Endpoint.init(name: "Travel", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/travel", method: .POST,
+                                            body: ["idEmployee": 1, "travels": [["lastTravelDate": "2012-04-23", "travelCity": "Brasil", "arriveDate" : NSNull(), "leaveDate": NSNull()]] ], parseTo: .covidContactModel))
         
         arrayEndpoints.append(Endpoint.init(name: "Search Cities", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/travel?search=Alaska", method: .GET, body: nil, parseTo: .searchCitiesModel))
         
         arrayEndpoints.append(Endpoint.init(name: "Questionnaire completed", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/questionaryflag", method: .PUT, body: ["idEmployee" : 1, "questionaryFlag" : true], parseTo: .questionaryflagModel))
+        
+        arrayEndpoints.append(Endpoint.init(name: "Risk Suspect", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/risk/suspect?email=erik.torres@softtek.com", method: .GET, body: nil, parseTo: .riskSuspectModel))
 
         arrayEndpoints.append(Endpoint.init(name: "Covid Test Result", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/covidtest", method: .POST, body: ["employeeCovidTest": [ "idEmployee": 1,
                                                                                                                                                                                           "lab" : "MEXICO",
                                                                                                                                                                                           "labTypeTest" : "Blood test",
                                                                                                                                                                                           "testDate" : "Wed, 01 Jan 2020 00:00:00 GMT"]], parseTo: .covitTestModel ))
         
-        arrayEndpoints.append(Endpoint.init(name: "Get QR", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/qr/access", method: .POST, body: ["idEmployee" : 1], parseTo: .accessQRModel))
+        arrayEndpoints.append(Endpoint.init(name: "Get QR", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/qr/access", method: .POST, body: ["idEmployee" : 505], parseTo: .accessQRModel))
         
         arrayEndpoints.append(Endpoint.init(name: "Checkout", url: "https://ddmx3eietd.execute-api.us-east-2.amazonaws.com/dev/employee/facilityaccess", method: .PUT, body: ["idEmployee" : 1], parseTo: .checkoutModel))
         

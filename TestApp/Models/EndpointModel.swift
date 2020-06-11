@@ -11,6 +11,7 @@ public enum ModelType: String {
     case symptomsModel = "SymptomsModel"
     case covidContactModel = "CovidContactModel"
     case questionaryflagModel = "QuestionaryflagModel"
+    case riskSuspectModel = "RiskSuspectModel"
     case searchCitiesModel = "SearchCitiesModel"
     case travelModel = "TravelModel"
     case covitTestModel = "CovitTestModel"

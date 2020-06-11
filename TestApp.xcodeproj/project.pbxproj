@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F51BD3A624920E7F00111511 /* RiskSuspectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51BD3A524920E7F00111511 /* RiskSuspectModel.swift */; };
 		F55F58462480DF1400627049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55F58452480DF1400627049 /* AppDelegate.swift */; };
 		F55F584C2480DF1600627049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55F584B2480DF1600627049 /* Assets.xcassets */; };
 		F58DC8EC24822DFF00949EFC /* AccessQRModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DC8EB24822DFF00949EFC /* AccessQRModel.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F51BD3A524920E7F00111511 /* RiskSuspectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskSuspectModel.swift; sourceTree = "<group>"; };
 		F55F58422480DF1400627049 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55F58452480DF1400627049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F55F584B2480DF1600627049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				F59033272485FCB300774623 /* QuestionaryFlagModel.swift */,
 				F59033292485FD6300774623 /* SearchCitiesModel.swift */,
 				F590332B2485FE1500774623 /* CheckoutModel.swift */,
+				F51BD3A524920E7F00111511 /* RiskSuspectModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				F590332C2485FE1500774623 /* CheckoutModel.swift in Sources */,
 				F590330A2484C9FD00774623 /* EndpointModel.swift in Sources */,
+				F51BD3A624920E7F00111511 /* RiskSuspectModel.swift in Sources */,
 				F58DC8EC24822DFF00949EFC /* AccessQRModel.swift in Sources */,
 				F58DC8FF2484B16D00949EFC /* RequestTableViewCell.swift in Sources */,
 				F590331C2485B4CE00774623 /* EmployeeModel.swift in Sources */,

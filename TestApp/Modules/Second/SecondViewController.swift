@@ -60,6 +60,8 @@ class SecondViewController: UIViewController {
             searchCities()
         case .questionaryflagModel:
             saveQuestionaryFlag()
+        case .riskSuspectModel:
+            riskSuspect()
         case .checkoutModel:
             checkout()
         }
@@ -271,6 +273,21 @@ class SecondViewController: UIViewController {
     
     private func checkout() {
         RequestManager<CheckoutModel>.request(with: endpoint.url, jsonObject: endpoint.body, method: endpoint.method) { (success, jsonData, model , error, statusCode) in
+            if let jsonData = jsonData {
+                if let json = jsonData.prettyPrintedJSONString {
+                    if let model = model {
+                        print(model)
+                        self.setupContent(content: json as String)
+                    }
+                }
+            } else {
+                self.setupContent(content: "Data is nil ☹️")
+            }
+        }
+    }
+    
+    private func riskSuspect() {
+        RequestManager<RiskSuspectModel>.request(with: endpoint.url, jsonObject: endpoint.body, method: endpoint.method) { (success, jsonData, model , error, statusCode) in
             if let jsonData = jsonData {
                 if let json = jsonData.prettyPrintedJSONString {
                     if let model = model {
